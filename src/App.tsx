@@ -1,4 +1,5 @@
 import Card from './components/card'
+import Greeting from './components/greeting'
 
 const cardData = [
   {
@@ -25,7 +26,7 @@ const cardData = [
     subTitle: 'Skills',
     subList: ['Emacs/VIM', 'VSCode'],
     footerTitle: 'Tools',
-    footerList: ['Git (Version Control)', 'Linux & (Bash CLI)', 'Github Actions (CI/CD)', 'Docker', 'Kubernetes'],
+    footerList: ['Git (Version Control)', 'Linux & (Bash CLI)', 'Github Actions (CI/CD)', 'Docker', 'Kubernetes']
   },
   {
     headerTitle: 'Soft Skills',
@@ -33,7 +34,7 @@ const cardData = [
     subTitle: 'Skills',
     subList: ['Well versed in English (Excellent communicator)', 'Team player'],
     footerTitle: 'Frameworks',
-    footerList: ['Figma design', 'Agile/SCRUM', 'Jira/Confluence'],
+    footerList: ['Figma design', 'Agile/SCRUM', 'Jira/Confluence']
   }
 ]
 
@@ -44,10 +45,7 @@ const App = () => (
     </div>
     <h1 className='text-4xl text-gray-600 font-medium'>Front-End Developer</h1>
     <p className='text-2xl text-gray-600 font-medium italic'>Design it. Build it. Ship it.</p>
-    <p className='text-xl font-semibold text-gray-600'>Greetings traveler</p>
-    <p className='text-xl text-gray-600'>
-      Since I've started my development career 6 years ago, I have built Single-Page Applications, Web Applications and a mobile application.
-    </p>
+    <Greeting />
     <Card data={cardData} />
   </div>
 )

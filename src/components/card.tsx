@@ -29,22 +29,26 @@ const Card = ({ data }: CardProps) => {
         experience
       }, index) => (
         <motion.div
-          whileHover={{ scale: 1.025 }}
+          whileHover={{
+            scale: 1.025,
+            boxShadow: '0.5em 0.25em #84CC16'
+          }}
           key={headerTitle}
           className='m-3 w-full flex-col border border-gray-600 rounded'
         >
           {/* <img src={CodingIcon} style={{ width: '5rem', height: '3rem' }} alt='coding-icon' /> */}
           <p className='text-2xl text-lime-500 font-bold'>{headerTitle}</p>
           <div>
-            <p className='text-lg'>{headerDescription}</p>
+            <p className='text-lg text-gray-600'>{headerDescription}</p>
             <p className='text-lg text-lime-500 font-semibold'>{subTitle}</p>
-            {subList.map((entry) => <p>{entry}</p>)}
+            {subList.map((entry) => <p className='text-gray-600'>{entry}</p>)}
           </div>
           <p className='text-lg text-lime-500 font-semibold'>{footerTitle}</p>
-          {footerList.map((entry) => <p>{entry}</p>)}
+          {footerList.map((entry) => <p className='text-gray-600'>{entry}</p>)}
         </motion.div>
-      ))}
-    </div>
+      ))
+      }
+    </div >
   )
 }
 
