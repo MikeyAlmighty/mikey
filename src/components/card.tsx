@@ -15,41 +15,39 @@ type CardProps = {
   data: Entry[]
 }
 
-const Card = ({ data }: CardProps) => {
-  return (
-    <div
-      className='flex w-full'>
-      {data.map(({
-        headerTitle,
-        headerDescription,
-        subTitle,
-        subList,
-        footerTitle,
-        footerList,
-        experience
-      }, index) => (
-        <motion.div
-          whileHover={{
-            scale: 1.025,
-            boxShadow: '0.5em 0.25em #84CC16'
-          }}
-          key={headerTitle}
-          className='m-3 w-full flex-col border border-gray-600 rounded'
-        >
-          {/* <img src={CodingIcon} style={{ width: '5rem', height: '3rem' }} alt='coding-icon' /> */}
-          <p className='text-2xl text-lime-500 font-bold'>{headerTitle}</p>
-          <div>
-            <p className='text-lg text-gray-600'>{headerDescription}</p>
-            <p className='text-lg text-lime-500 font-semibold'>{subTitle}</p>
-            {subList.map((entry) => <p className='text-gray-600'>{entry}</p>)}
-          </div>
-          <p className='text-lg text-lime-500 font-semibold'>{footerTitle}</p>
-          {footerList.map((entry) => <p className='text-gray-600'>{entry}</p>)}
-        </motion.div>
-      ))
-      }
-    </div >
-  )
-}
+const Card = ({ data }: CardProps) => (
+  <div
+    className='flex w-full'>
+    {data.map(({
+      headerTitle,
+      headerDescription,
+      subTitle,
+      subList,
+      footerTitle,
+      footerList,
+      experience
+    }, index) => (
+      <motion.div
+        whileHover={{
+          scale: 1.025,
+          boxShadow: '0.5em 0.25em #84CC16'
+        }}
+        key={headerTitle}
+        className='m-3 py-6 w-full flex-col border border-gray-600 rounded'
+      >
+        {/* <img src={CodingIcon} style={{ width: '5rem', height: '3rem' }} alt='coding-icon' /> */}
+        <p className='text-2xl text-lime-500 font-bold p-1'>{headerTitle}</p>
+        <div>
+          <p className='text-lg text-gray-600'>{headerDescription}</p>
+          <p className='text-lg text-lime-500 font-semibold p-1'>{subTitle}</p>
+          {subList.map((entry) => <p className='text-gray-600'>{entry}</p>)}
+        </div>
+        <p className='text-lg text-lime-500 font-semibold p-1'>{footerTitle}</p>
+        {footerList.map((entry) => <p className='text-gray-600'>{entry}</p>)}
+      </motion.div>
+    ))
+    }
+  </div >
+)
 
 export default Card

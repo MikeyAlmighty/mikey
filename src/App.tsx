@@ -13,7 +13,7 @@ const cardData = [
   },
   {
     headerTitle: 'Mobile Developer',
-    headerDescription: 'I like to code mobile applications bringing products into the hands of a user',
+    headerDescription: 'I like to code mobile applications bringing products into the hands of a user.',
     subTitle: 'Languages',
     subList: ['React Native', 'TypeScript/JavaScript'],
     footerTitle: 'Dev Tools',
@@ -39,12 +39,12 @@ const cardData = [
 ]
 
 const App = () => (
-  <div className='text-center p-11 bg-gray-100 h-full'>
+  <div className='text-center p-11 bg-gray-100 h-screen'>
     <div>
       <h1 className='text-6xl text-lime-500 font-bold'>Michael Leibbrandt</h1>
     </div>
-    <h1 className='text-4xl text-gray-600 font-medium'>Front-End Developer</h1>
-    <p className='text-2xl text-gray-600 font-medium italic'>Design it. Build it. Ship it.</p>
+    <h1 className='text-5xl text-gray-600'>Front-End Developer</h1>
+    <p className='text-2xl text-gray-600 italic'>Design it. Build it. Ship it.</p>
     <Greeting />
     <Card data={cardData} />
   </div>
