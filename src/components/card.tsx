@@ -1,13 +1,13 @@
 import { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 
-type ListEntry = Array<{ label: string, Icon?: ReactNode, alt?: string }>
+type ListEntry = { label: string, Icon?: ReactNode, alt?: string }
 
 type CardData = {
-  title: string
+  header: ListEntry
   description: string
   subTitle: string
-  subList: ListEntry
+  subList: ListEntry[]
   footerTitle: string
   footerList: string[]
   experience?: string
@@ -22,7 +22,7 @@ const Card = ({ data }: CardProps) => {
     <div
       className='flex w-full'>
       {data.map(({
-        title,
+        header,
         description,
         subTitle,
         subList,
@@ -33,13 +33,14 @@ const Card = ({ data }: CardProps) => {
         <motion.div
           whileHover={{
             scale: 1.025,
-            boxShadow: '0.5em 0.25em #84CC16'
+            boxShadow: '0.5em 0.25em #84CC16',
+            border: '1px solid #84CC16'
           }}
-          key={title}
-          className='m-3 w-full flex-col border border-gray-600 rounded'
+          key={header.alt}
+          className='m-3 w-full border border-gray-600 rounded'
         >
-          {/* <img src={CodingIcon} style={{ width: '5rem', height: '3rem' }} alt='coding-icon' /> */}
-          <p className='text-2xl text-lime-500 font-bold'>{title}</p>
+          {header.Icon && <header.Icon className='mx-auto my-6' width='7em' height='5em' alt='header-icon' />}
+          <p className='text-2xl text-lime-500 font-bold'>{header.label}</p>
           <p className='text-lg text-gray-600 py-2'>{description}</p>
           <p className='text-lg text-lime-500 font-medium'>{subTitle}</p>
           {subList.map(({ label, alt, Icon }) => (

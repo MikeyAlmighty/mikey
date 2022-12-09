@@ -1,3 +1,8 @@
+import { ReactComponent as ComputerIcon } from '@assets/computer.svg'
+import { ReactComponent as MobileIcon } from '@assets/mobile-device.svg'
+import { ReactComponent as TechnicalSkillsIcon } from '@assets/technical-skills.svg'
+import { ReactComponent as SoftSkillsIcon } from '@assets/soft-skills.svg'
+
 import { ReactComponent as ReactIcon } from '@assets/react.svg'
 import { ReactComponent as JavaScriptIcon } from '@assets/javascript.svg'
 import { ReactComponent as TypeScriptIcon } from '@assets/typescript.svg'
@@ -19,7 +24,11 @@ import { ReactComponent as JiraIcon } from '@assets/jira.svg'
 
 export const cardData = [
   {
-    title: 'Front-End Developer',
+    header: {
+        label: 'Front-End Developer',
+        Icon: ComputerIcon,
+        alt: 'computer-icon',
+    },
     description: 'I like to bring ideas to life in the browser by connecting users to products through sleek interfaces with code.',
     subTitle: 'Languages & Frameworks',
     subList: [
@@ -30,10 +39,15 @@ export const cardData = [
       { label: 'Storybook', alt: 'storybook-icon', Icon: StorybookIcon }
     ],
     footerTitle: 'Dev Tools',
-    footerList: ['Webpack', 'ESLint/Prettier', 'Babel', 'Vite', 'TSC',],
+    footerList: ['REST', 'Webpack', 'ESLint/Prettier', 'Babel', 'Vite', 'TSC',],
     experience: '5 years'
   },
   {
+    header: {
+        label: 'Mobile Developer',
+        Icon: MobileIcon,
+        alt: 'mobile-icon',
+    },
     title: 'Mobile Developer',
     description: 'I like to code mobile applications bringing products into the hands of a user',
     subTitle: 'Languages',
@@ -48,7 +62,11 @@ export const cardData = [
     experience: '1 year'
   },
   {
-    title: 'Technical Skills',
+    header: {
+        label: 'Technical Skills',
+        Icon: TechnicalSkillsIcon ,
+        alt: 'technical-skills-icon',
+    },
     description: 'I have created an environment in which I write software and build products focusing on both quality and speed (time of delivery).',
     subTitle: 'Skills',
     subList: [
@@ -65,7 +83,11 @@ export const cardData = [
     footerList: ['Github Actions (CI/CD)', 'Jenkins']
   },
   {
-    title: 'Soft Skills',
+    header: {
+        label: 'Soft Skills',
+        Icon: SoftSkillsIcon,
+        alt: 'soft-skills-icon',
+    },
     description: 'I value building software in iterations in an efficient manner using modern Agile methodologies.',
     subTitle: 'Frameworks',
     subList: [
