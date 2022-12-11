@@ -21,6 +21,8 @@ import { ReactComponent as AgileIcon } from '@assets/agile.svg'
 import { ReactComponent as JiraIcon } from '@assets/jira.svg'
 
 
+import { ReactComponent as GithubIcon } from '@assets/github.svg'
+import { ReactComponent as LinkedInIcon } from '@assets/linkedIn.svg'
 
 export const cardData = [
   {
@@ -39,8 +41,8 @@ export const cardData = [
       { label: 'Storybook', alt: 'storybook-icon', Icon: StorybookIcon }
     ],
     footerTitle: 'Dev Tools',
-    footerList: ['REST', 'Webpack', 'ESLint/Prettier', 'Babel', 'Vite', 'TSC',],
-    experience: '5 years'
+    footerList: ['REST', 'Webpack', 'Jest', 'ESLint/Prettier', 'Babel', 'Vite', 'TSC',],
+    experience: '6 years'
   },
   {
     header: {
@@ -96,6 +98,21 @@ export const cardData = [
       { label: 'Jira/Confluence', alt: 'jira-icon', Icon: JiraIcon }
     ],
     footerTitle: 'Skills',
-    footerList: ['Well versed in English (Excellent communicator)', 'Team player'],
+    footerList: ['Passionate', 'Well versed in English (Excellent communicator)', 'Team player'],
   }
+]
+
+export const socialData = [
+   {
+      label: 'Github',
+      Icon: GithubIcon,
+      alt: 'github-icon',
+      link: 'https://github.com/MikeyAlmighty'
+   },
+   {
+      label: 'LinkedIn',
+      Icon: LinkedInIcon,
+      alt: 'linkedIn-icon',
+      link: 'https://www.linkedin.com/in/michael-leibbrandt-10904b151/'
+   },
 ]

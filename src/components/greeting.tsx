@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const Greeting = () => {
   return (
     <motion.div
-      className='border w-11/12 border-lime-500 rounded opacity-0 1px solid shadow shadow-lime-500'
+      className='border lg:p-8 p-4 my-6 lg:w-11/12 w-8/12 border-lime-500 rounded opacity-0 shadow shadow-lime-500'
       animate={{ x: 75, opacity: 1 }}
       transition={{ duration: 1 }}
     >
