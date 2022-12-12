@@ -15,7 +15,7 @@
   "dependencies": {
     "eslint": "^8.29.0",
     "eslint-config-standard-with-typescript": "^23.0.0",
-    "framer-motion": "^7.6.18",
+    "framer-motion": "^7.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite-plugin-ssr": "^0.4.54",
