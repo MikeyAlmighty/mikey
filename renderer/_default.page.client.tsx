@@ -3,6 +3,7 @@ import { hydrateRoot } from 'react-dom/client'
 import { PageShell } from './PageShell'
 import type { PageContextClient } from './types'
 import './index.css'
+import './logo.svg'
 
 export { render }
 

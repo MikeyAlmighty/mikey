@@ -4,6 +4,7 @@ import { PageShell } from './PageShell'
 import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr'
 import logoUrl from './logo.svg'
 import type { PageContextServer } from './types'
+import './index.css'
 
 export { render }
 // See https://vite-plugin-ssr.com/data-fetching
