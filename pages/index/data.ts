@@ -51,7 +51,7 @@ export const cardData = [
         alt: 'mobile-icon',
     },
     title: 'Mobile Developer',
-    description: 'I like to code mobile applications bringing products into the hands of a user',
+    description: 'I like to code mobile applications bringing products into the hands of a user.',
     subTitle: 'Languages',
     subList: [
       { label: 'React Native', alt: 'react-native-icon', Icon: ReactIcon },
