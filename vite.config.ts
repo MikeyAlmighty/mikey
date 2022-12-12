@@ -23,6 +23,7 @@ const config: UserConfig = {
     },
   },
   plugins: [react(), svgr(), ssr()],
+  base: '/mikey/'
 }
 
 export default config
