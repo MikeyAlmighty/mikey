@@ -2,6 +2,7 @@ import React from 'react'
 import { hydrateRoot } from 'react-dom/client'
 import { PageShell } from './PageShell'
 import type { PageContextClient } from './types'
+import './index.css'
 
 export { render }
 
