@@ -1,0 +1,164 @@
+{
+  "renderer/logo.svg": {
+    "file": "assets/logo.ebcda4a8.svg",
+    "src": "renderer/logo.svg"
+  },
+  "src/assets/technology-background.svg": {
+    "file": "assets/technology-background.01b6993a.svg",
+    "src": "src/assets/technology-background.svg"
+  },
+  "src/assets/computer.svg": {
+    "file": "assets/computer.fb087191.svg",
+    "src": "src/assets/computer.svg"
+  },
+  "src/assets/mobile-device.svg": {
+    "file": "assets/mobile-device.803a730f.svg",
+    "src": "src/assets/mobile-device.svg"
+  },
+  "src/assets/technical-skills.svg": {
+    "file": "assets/technical-skills.aae6d932.svg",
+    "src": "src/assets/technical-skills.svg"
+  },
+  "src/assets/soft-skills.svg": {
+    "file": "assets/soft-skills.8272b0cd.svg",
+    "src": "src/assets/soft-skills.svg"
+  },
+  "src/assets/react.svg": {
+    "file": "assets/react.5989d2fb.svg",
+    "src": "src/assets/react.svg"
+  },
+  "src/assets/javascript.svg": {
+    "file": "assets/javascript.35b14b23.svg",
+    "src": "src/assets/javascript.svg"
+  },
+  "src/assets/typescript.svg": {
+    "file": "assets/typescript.0ca64b64.svg",
+    "src": "src/assets/typescript.svg"
+  },
+  "src/assets/nextjs.svg": {
+    "file": "assets/nextjs.38e9550d.svg",
+    "src": "src/assets/nextjs.svg"
+  },
+  "src/assets/visual-studio-code.svg": {
+    "file": "assets/visual-studio-code.d8d0e38f.svg",
+    "src": "src/assets/visual-studio-code.svg"
+  },
+  "src/assets/emacs.svg": {
+    "file": "assets/emacs.fc0338ec.svg",
+    "src": "src/assets/emacs.svg"
+  },
+  "src/assets/vim.svg": {
+    "file": "assets/vim.2059822c.svg",
+    "src": "src/assets/vim.svg"
+  },
+  "src/assets/storybook.svg": {
+    "file": "assets/storybook.1deae5cc.svg",
+    "src": "src/assets/storybook.svg"
+  },
+  "src/assets/git.svg": {
+    "file": "assets/git.66d20d7d.svg",
+    "src": "src/assets/git.svg"
+  },
+  "src/assets/linux.svg": {
+    "file": "assets/linux.976ab918.svg",
+    "src": "src/assets/linux.svg"
+  },
+  "src/assets/bash.svg": {
+    "file": "assets/bash.aa40bb50.svg",
+    "src": "src/assets/bash.svg"
+  },
+  "src/assets/docker.svg": {
+    "file": "assets/docker.698222b9.svg",
+    "src": "src/assets/docker.svg"
+  },
+  "src/assets/kubernetes.svg": {
+    "file": "assets/kubernetes.16ab0636.svg",
+    "src": "src/assets/kubernetes.svg"
+  },
+  "src/assets/figma.svg": {
+    "file": "assets/figma.01110dbc.svg",
+    "src": "src/assets/figma.svg"
+  },
+  "src/assets/agile.svg": {
+    "file": "assets/agile.76a76593.svg",
+    "src": "src/assets/agile.svg"
+  },
+  "src/assets/jira.svg": {
+    "file": "assets/jira.fc0a4d01.svg",
+    "src": "src/assets/jira.svg"
+  },
+  "src/assets/github.svg": {
+    "file": "assets/github.ffd1284a.svg",
+    "src": "src/assets/github.svg"
+  },
+  "src/assets/linkedIn.svg": {
+    "file": "assets/linkedIn.c62ffdf4.svg",
+    "src": "src/assets/linkedIn.svg"
+  },
+  "renderer/_default.page.client.tsx": {
+    "file": "assets/renderer/_default.page.client.6ef001e0.js",
+    "src": "renderer/_default.page.client.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-47eb7e32.js"
+    ],
+    "css": [
+      "assets/_default.page.client.629ad81d.css"
+    ]
+  },
+  "renderer/_error.page.tsx": {
+    "file": "assets/renderer/_error.page.6919b669.js",
+    "src": "renderer/_error.page.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-47eb7e32.js"
+    ]
+  },
+  "pages/index/index.page.tsx": {
+    "file": "assets/pages/index/index.page.34eab142.js",
+    "src": "pages/index/index.page.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-47eb7e32.js"
+    ]
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
+    "file": "assets/entry-client-routing.c51bd5e0.js",
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_chunk-12bc3c54.js"
+    ],
+    "dynamicImports": [
+      "pages/index/index.page.tsx",
+      "renderer/_error.page.tsx",
+      "renderer/_default.page.client.tsx"
+    ]
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
+    "file": "assets/entry-server-routing.26133dd6.js",
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_chunk-12bc3c54.js"
+    ],
+    "dynamicImports": [
+      "pages/index/index.page.tsx",
+      "renderer/_error.page.tsx",
+      "renderer/_default.page.client.tsx"
+    ]
+  },
+  "_chunk-47eb7e32.js": {
+    "file": "assets/chunk-47eb7e32.js"
+  },
+  "_chunk-12bc3c54.js": {
+    "file": "assets/chunk-12bc3c54.js"
+  },
+  "renderer/_default.page.client.css": {
+    "file": "assets/_default.page.client.629ad81d.css",
+    "src": "renderer/_default.page.client.css"
+  }
+}
