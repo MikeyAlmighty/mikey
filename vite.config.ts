@@ -22,8 +22,7 @@ const config: UserConfig = {
       "@components": path.resolve(__dirname, "./src/components"),
     },
   },
-  plugins: [react(), svgr(), ssr()],
-  base: '/mikey/'
+  plugins: [react(), svgr(), ssr({ prerender: true })],
 }
 
 export default config
