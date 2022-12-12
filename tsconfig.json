@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+    "paths": {
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*.svg"
+      ]
+    },
+    "types": ["vite/client"],
     "target": "ESNext",
     "lib": [
       "dom",
@@ -14,14 +23,19 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react"
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
   },
   "include": [
     "src"
-  ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  ]
 }
